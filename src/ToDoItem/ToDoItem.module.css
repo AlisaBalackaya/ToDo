@@ -1,0 +1,44 @@
+.item_task{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 10px;
+    background-color:#F5F1F0;
+    justify-content: space-between;
+    height: 52px;
+}
+
+.left_item_task{
+    display: flex;
+    align-items: center;
+
+}
+
+.right_item_task{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.btn_delete{
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    height: 35px;
+    width: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    background: url(https://www.svgrepo.com/show/244047/delete-trash.svg) center center/cover no-repeat;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+.btn_delete:active{
+    background-color: #fff;
+    color: #444;
+}
+
+.btn_delete:hover{
+    border: 1px solid #444;
+    border: #fff;
+}

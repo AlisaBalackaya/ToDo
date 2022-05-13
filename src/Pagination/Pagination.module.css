@@ -1,0 +1,24 @@
+.list_buttons{
+    margin-top: 40px;
+}
+
+.btn_pagination{
+    margin-left: 10px;
+    box-sizing: border-box;
+    height: 25px;
+    border: 1px solid #F5F1F0;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #444;
+    background-color: #F5F1F0;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+.btn_pagination:hover{
+    color: #f5426c;
+}
+
+.btn_pagination:active{
+    background-color: #fff;
+    color: #444;
+}
