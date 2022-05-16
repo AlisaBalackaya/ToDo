@@ -2,13 +2,14 @@ import styles from'./AddToDo.module.css';
 import { useState } from 'react';
 
 function AddToDo({todos, setTodos}) {
-    
+    let dateTask = new Date();
     const [todo, setTodo] = useState('')
     
   const addNewTodo = () =>{
     const newTodo = {
         id: Date.now(),
-        task: todo
+        task: todo,
+        date:  `${dateTask.getDate()}.${dateTask.getMonth()}.${dateTask.getFullYear()}`
     }
 
     setTodos([...todos, newTodo])
