@@ -1,10 +1,22 @@
 import styles from'./AddToDo.module.css';
+import { useState } from 'react';
 
-function AddToDo() {
+function AddToDo({todos, setTodos}) {
+    
+    const [todo, setTodo] = useState('')
+    
+  const addNewTodo = () =>{
+    const newTodo = {
+        id: Date.now(),
+        task: todo
+    }
+
+    setTodos([...todos, newTodo])
+  }  
   return ( 
-    <div class="input_container">
-        <input type="text" placeholder="I want to..." class={styles.input_task}/>
-        <button class={styles.btn_add}>Add</button>
+        <div class={styles.input_container}>
+        <input type="text" placeholder="I want to..." class={styles.input_task} value={todo} onChange={e=> setTodo(e.target.value)}/>
+        <button onClick={addNewTodo} class={styles.btn_add}>Add</button>
     </div>
   );
 }
