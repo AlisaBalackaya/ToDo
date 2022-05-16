@@ -20,7 +20,10 @@ function ToDo() {
      <AddToDo todos={todos} setTodos={setTodos}/>
      <SortButtons/>
      <TodoContainer todos={todos} removeTodo={removeTodo}/>
-     <Pagination/>
+     {todos.length>5
+     ? <Pagination/>
+     :<div></div>   }
+     
     </div>
   );
 }
